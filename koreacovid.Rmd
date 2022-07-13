@@ -60,7 +60,7 @@ basicCC <- ggplot(dd2,aes(x=result,y=prcnt*100,fill=Sex))
 basicCC + geom_bar(stat="identity", position = "dodge")
 ```
 
- The ggplot chart shows us that there were more females observed than men. When you look you can tell that there were more males that died than females. Out of all the people that died 60% were males. This tells us that is something big to keep in mind since there were less males than females in this observation. 
+ The ggplot chart shows us that there were more females observed than men. When you look you can tell that there were more males that died than females. Out of all the people that died 65% were males. This tells us that is something big to keep in mind since there were less males than females in this observation. 
 
 
 
@@ -85,4 +85,7 @@ fisher.test(table1)
 The fisher test tells us that the males were 2.3 times as likely to die than females in this study. The p-value tells us that the chances of getting this result if there were no difference is 0.0009.
 
 ## Conclusions
+
+The results from the bar chart tells us that 65% of those that died were male and only 35% being female. The numerical results told us that 3% of males died and 1.4% females died. The fisher and p-value tests told us that men were 2.3 times as likely with the chances of seeing these results with no difference is 0.0009. Which we can conclude that death is not independent of sex.
+
 
