@@ -63,11 +63,15 @@ basicCC + geom_bar(stat="identity", position = "dodge")
 
 
 
-
-
-  
 ## Numerical results
 
+```{r}
+table1 <- xtabs(~Sex + result, data=kRdata)
+rowPerc(table1)
+colPerc(table1)
+```
+
+The results from the bottom half of the table shows 1.4% of females died and 3% of males died. You can easily see that double the amount of males died then females.
 
 ## Inferential results 
 
